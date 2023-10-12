@@ -3,7 +3,7 @@
     "Alarm Message Receiver": {
         "User Information": {
             "Profile": {
-                "User Type": [ //this selection controls the whole data structure
+                "User Type": [ 
                     "Alarm Message Reciever",
                     "other user types..."
                 ],
@@ -30,7 +30,7 @@
     "Portal User": {
         "User Information": {
             "Profile": {
-                "User Type": [ //this selection controls the whole data structure
+                "User Type": [ 
                     "Portal User",
                     "other user types..."
                 ],
@@ -108,13 +108,15 @@
                     "Beschreibung": {"title": "Portalbenutzer", "information": "string"},
                     "Anzeigen": {"title": "Portalbenutzer einsehen", "selected": "boolean"},
                     "Bearbeiten": {"title": "Portalbenutzer erfassen un anpassen", "selected": "boolean"},
-                    "hat Berechtigung": {"title": "fur alle Mandanten", "options": [
-                        {
-                            "Alle Mandanten": {
+                    "hat Berechtigung": {
+                        "title": "fur alle Mandanten", 
+                        "options": [
+                            {
+                                "title": "fur alle Mandanten",
                                 "selected": "boolean",
-                                "supply chain": [
+                                "supplyChain": [
                                     {
-                                        "supplySection": "Fertigung", 
+                                        "supplyChainSection": "Fertigung", 
                                         "selected": "boolean",
                                         "locations": [
                                             {
@@ -124,7 +126,7 @@
                                         ]
                                     },
                                     {
-                                        "supplySection": "Lager", 
+                                        "supplyChainSection": "Lager", 
                                         "selected": "boolean",
                                         "locations": [
                                             {   
@@ -135,7 +137,7 @@
                                         ]
                                     },
                                     {
-                                        "supplySection": "Spedition", 
+                                        "supplyChainSection": "Spedition", 
                                         "selected": "boolean",
                                         "locations": [
                                             {
@@ -147,8 +149,152 @@
                                     }
                                 ]
                             }
-                        }
-                    ]}
+                        ]
+                    } 
+                },
+                {
+                    "Beschreibung": {"title": "Dashboard", "information": "string"},
+                    "Anzeigen": {"title": "Dashboard einsehen", "selected": "boolean"},
+                    "Bearbeiten": {"title": "Dashboard anpassen", "selected": "boolean"},
+                    "hat Berechtigung": {
+                        "title": "fur Fertigung, alle Standorte, fur Lagerhalle, alle Standorte", 
+                        "options": [
+                            {
+                                "title": "fur alle Mandanten",
+                                "selected": "boolean",
+                                "supplyChain": [
+                                    {
+                                        "supplyChainSection": "Fertigung", 
+                                        "selected": "boolean",
+                                        "locations": [
+                                            {
+                                                "locationName": "string",
+                                                "selected": "boolean"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "supplyChainSection": "Lager", 
+                                        "selected": "boolean",
+                                        "locations": [
+                                            {   
+                                                "locationId": "number",
+                                                "locationName": "string",
+                                                "selected": "boolean"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "supplyChainSection": "Spedition", 
+                                        "selected": "boolean",
+                                        "locations": [
+                                            {
+                                                "locationId": "number",
+                                                "locationName": "string",
+                                                "selected": "boolean"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Beschreibung": {"title": "Fernzugriff", "information": "string"},
+                    "Anzeigen": {"title": "Fernzugriff nutzen", "selected": "boolean"},
+                    "Bearbeiten": {"title": "Benutzer kinfigurieren", "selected": "boolean"},
+                    "hat Berechtigung": {
+                        "title": "fur Fertigung, alle Standorte, fur Lagerhalle, alle Standorte", 
+                        "options": [
+                            {
+                                "title": "fur alle Mandanten",
+                                "selected": "boolean",
+                                "supplyChain": [
+                                    {
+                                        "supplyChainSection": "Fertigung", 
+                                        "selected": "boolean",
+                                        "locations": [
+                                            {
+                                                "locationName": "string",
+                                                "selected": "boolean"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "supplyChainSection": "Lager", 
+                                        "selected": "boolean",
+                                        "locations": [
+                                            {   
+                                                "locationId": "number",
+                                                "locationName": "string",
+                                                "selected": "boolean"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "supplyChainSection": "Spedition", 
+                                        "selected": "boolean",
+                                        "locations": [
+                                            {
+                                                "locationId": "number",
+                                                "locationName": "string",
+                                                "selected": "boolean"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }, 
+                {
+                    "Beschreibung": {"title": "Remote Visualisiertung", "information": "string"},
+                    "Anzeigen": {"title": "Remote Visualisiertung nutzen", "selected": "boolean"},
+                    "Bearbeiten": {"title": "Benutzer konfigurieren", "selected": "boolean"},
+                    "hat Berechtigung": "false"
+                }, 
+                {
+                    "Beschreibung": {"title": "Alarmierung", "information": "string"},
+                    "Anzeigen": {"title": "Alarmierung einsehen", "selected": "boolean"},
+                    "Bearbeiten": {"title": "Alarmierung erfassen und anpassen", "selected": "boolean"},
+                    "hat Berechtigung": "false"
+                },
+                {
+                    "Beschreibung": {"title": "Alarmmeldung", "information": "string"},
+                    "Anzeigen": {"title": "Alarmmeldung einsehen", "selected": "boolean"},
+                    "Bearbeiten": {"title": "Alarmmeldung quittieren und dokumentieren", "selected": "boolean"},
+                    "hat Berechtigung": "false"
+                },
+                {
+                    "Beschreibung": {"title": "Alarmmeldungsempfanger", "information": "string"},
+                    "Anzeigen": {"title": "Alarmmeldungsempfanger einsehen", "selected": "boolean"},
+                    "Bearbeiten": {"title": "Alarmmeldungsempfanger erfassen und anpassen", "selected": "boolean"},
+                    "hat Berechtigung": "false"    
+                },
+                {
+                    "Beschreibung": {"title": "Alarmgrenzwert", "information": "string"},
+                    "Anzeigen": {"title": "Grenzwerte fur Alarme einsehen", "selected": "boolean"},
+                    "Bearbeiten": {"title": "Grenzwerte fur Alarme erfassen und anpassen", "selected": "boolean"},
+                    "hat Berechtigung": "false"
+                },
+                {
+                    "Beschreibung": {"title": "Wiki Anlagedokumentation", "information": "string"}, 
+                    "Anzeigen": {"title": "Wiki Anlagedokumentation einsehen", "selected": "boolean"},
+                    "Bearbeiten": {"title": "Wiki Anlagedokumentation erfassen und anpassen", "selected": "boolean"},
+                    "hat Berechtigung": "false"
+                },
+                {
+                    "Beschreibung": {"title": "Preise", "information": "string"},
+                    "Anzeigen": {"title": "Preise bei Funktionsaktivierung einsehen", "selected": "boolean"},
+                    "Bearbeiten": "false",
+                    "hat Berechtigung": "false"
+                },
+                {
+                    "Beschreibung": {"title": "Daten Export", "information": "string"},
+                    "Anzeigen": {"title": "Daten Export nutzen", "selected": "boolean"},
+                    "Bearbeiten": "false",
+                    "hat Berechtigung": "false"
                 }
             ]
         }
@@ -158,7 +304,7 @@
     "Administrator": {
         "User Information": {
             "Profile": {
-                "User Type": [ //this selection controls the whole data structure
+                "User Type": [ 
                     "Administrator",
                     "other user types..."
                 ],
@@ -191,14 +337,21 @@
             "Assigned Roles": [], //selected groups added here
             "Group Roles": [] //possible groups to select
         },
-        "Assigned Permissions": ""
+        "Assigned Permissions": {
+            "System Permissions": [
+                {"title": "Gobale administration (Mutation)", "selected": "boolean", "information": "string"},
+                {"title": "Globale administration (Support)", "selected": "boolean", "information": "string"},
+                {"title": "Globale administration (Abrechnung)", "selected": "boolean", "information": "string"}
+
+            ]
+        }
     }
 },
 {
     "Dashboard User": {
         "User Information": {
             "Profile": {
-                "User Type": [ //this selection controls the whole data structure
+                "User Type": [ 
                     "Dashboard User",
                     "other user types..."
                 ],
@@ -225,14 +378,65 @@
             "Assigned Roles": [], //selected groups added here
             "Group Roles": [] //possible groups to select
         },
-        "Assigned Permissions": ""
+        "Assigned Permissions": {
+            "Feature Permissions":[
+                {
+                "Beschreibung":{"title": "Dashboard", "information": "string"},
+                "Anzeigen": {"title": "Dashboard einsehen", "selected": "boolean"},
+                "Bearbeiten": "false",
+                "hat Berechtigung": {
+                    "title": "fur Fertigung, alle Standorte", 
+                    "options": [
+                        {
+                            "title": "fur alle Mandanten",
+                            "selected": "boolean",
+                            "supplyChain": [
+                                {
+                                    "supplyChainSection": "Fertigung", 
+                                    "selected": "boolean",
+                                    "locations": [
+                                        {
+                                            "locationName": "string",
+                                            "selected": "boolean"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "supplyChainSection": "Lager", 
+                                    "selected": "boolean",
+                                    "locations": [
+                                        {   
+                                            "locationId": "number",
+                                            "locationName": "string",
+                                            "selected": "boolean"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "supplyChainSection": "Spedition", 
+                                    "selected": "boolean",
+                                    "locations": [
+                                        {
+                                            "locationId": "number",
+                                            "locationName": "string",
+                                            "selected": "boolean"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+                }   
+            ]
+        }
     }
 },
 {
     "API User": {
         "User Information": {
             "Profile": {
-                "User Type": [ //this selection controls the whole data structure
+                "User Type": [ 
                     "API USer",
                     "other user types..."
                 ],
