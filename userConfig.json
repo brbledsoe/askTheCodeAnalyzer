@@ -21,8 +21,8 @@
             }
         },
         "Assigned Groups": {
-            "Assigned Groups": [], //selected groups added here
-            "Group Selection": [] //possible groups to select
+            "Assigned Groups": [], 
+            "Group Selection": [] 
         }
     }
 },
@@ -63,12 +63,12 @@
             }
         },
         "Assigned Groups": {
-            "Assigned Groups": [], //selected groups added here
-            "Group Selection": [] //possible groups to select
+            "Assigned Groups": [], 
+            "Group Selection": [] 
         },
         "Assigned Role": {
-            "Assigned Roles": [], //selected groups added here
-            "Group Roles": [] //possible groups to select
+            "Assigned Roles": [], 
+            "Group Roles": [] 
         },
         "Assigned Permissions": {
             "System Permissions for Tenants":{
@@ -330,12 +330,12 @@
             }
         },
         "Assigned Groups": {
-            "Assigned Groups": [], //selected groups added here
-            "Group Selection": [] //possible groups to select
+            "Assigned Groups": [], 
+            "Group Selection": [] 
         },
         "Assigned Role": {
-            "Assigned Roles": [], //selected groups added here
-            "Group Roles": [] //possible groups to select
+            "Assigned Roles": [], 
+            "Group Roles": [] 
         },
         "Assigned Permissions": {
             "System Permissions": [
@@ -371,8 +371,8 @@
             }
         },
         "Assigned Groups": {
-            "Assigned Groups": [], //selected groups added here
-            "Group Selection": [] //possible groups to select
+            "Assigned Groups": [], 
+            "Group Selection": [] 
         },
         "Assigned Role": {
             "Assigned Roles": [], //selected groups added here
@@ -452,16 +452,16 @@
                     "inactive"
                 ],
                 "Last Active": "date",
-                "Initial Password": "{randomly generated password}" //❗different from initial drawing
+                "Initial Password": "{randomly generated password}" 
             }
         },
         "Assigned Groups": {
-            "Assigned Groups": [], //selected groups added here
-            "Group Selection": [] //possible groups to select
+            "Assigned Groups": [], 
+            "Group Selection": [] 
         },
         "Assigned Role": {
-            "Assigned Roles": [], //selected groups added here
-            "Group Roles": [] //possible groups to select
+            "Assigned Roles": [], 
+            "Group Roles": [] 
         },
         "Assigned Permissions": ""
     }
