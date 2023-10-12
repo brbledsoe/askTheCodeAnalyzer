@@ -1,0 +1,579 @@
+[
+    {
+        "alarmMessageReceiver": {
+            "userInformation": {
+                "profile": {
+                    "userType": [
+                        "Alarm Message Reciever",
+                        "other user types..."
+                    ],
+                    "email": "string",
+                    "telephone": "number",
+                    "firstName": "string",
+                    "lastName": "string",
+                    "firm": "string"
+                },
+                "information": {
+                    "alarmMessageReceptionIs": [
+                        "active",
+                        "inactive"
+                    ]
+                }
+            },
+            "assignedGroups": {
+                "assignedGroups": [],
+                "groupSelection": []
+            }
+        }
+    },
+    {
+        "portalUser": {
+            "userInformation": {
+                "profile": {
+                    "userType": [
+                        "Portal User",
+                        "other user types..."
+                    ],
+                    "email": "string",
+                    "telephone": "number",
+                    "firstName": "string",
+                    "lastName": "string",
+                    "firm": "string"
+                },
+                "information": {
+                    "userIs": [
+                        "active",
+                        "inactive"
+                    ],
+                    "alarmMessageReceptionIs": [
+                        "active",
+                        "inactive"
+                    ],
+                    "startSite": [
+                        "Dashboard",
+                        "Alarmsettings",
+                        "..."
+                    ],
+                    "lastActive": "date",
+                    "multi-factor-authenticationIs": [
+                        "active",
+                        "inactive"
+                    ],
+                    "initialPassword": "{randomly generated password}"
+                }
+            },
+            "assignedGroups": {
+                "assignedGroups": [],
+                "groupSelection": []
+            },
+            "assignedRole": {
+                "assignedRoles": [],
+                "groupRoles": []
+            },
+            "assignedPermissions": {
+                "systemPermissionsForTenants": {
+                    "manageRole-basedPermissions": {
+                        "slected": "boolean",
+                        "information": "string"
+                    },
+                    "manageDashboards": {
+                        "slected": "boolean",
+                        "information": "string"
+                    },
+                    "manageLocations": {
+                        "slected": "boolean",
+                        "information": "string"
+                    },
+                    "manageEndDevices": {
+                        "slected": "boolean",
+                        "information": "string",
+                        "forProduction,Warehouse": {
+                            "allTenants": {
+                                "selected": "boolean",
+                                "production": {
+                                    "selected": "boolean"
+                                },
+                                "warehouse": {
+                                    "selected": "boolean"
+                                },
+                                "shippingCompany": {
+                                    "selected": "boolean"
+                                }
+                            }
+                        }
+                    }
+                },
+                "featurePermissions": [
+                    {
+                        "beschreibung": {
+                            "title": "Portalbenutzer",
+                            "information": "string"
+                        },
+                        "anzeigen": {
+                            "title": "Portalbenutzer einsehen",
+                            "selected": "boolean"
+                        },
+                        "bearbeiten": {
+                            "title": "Portalbenutzer erfassen un anpassen",
+                            "selected": "boolean"
+                        },
+                        "hatBerechtigung": {
+                            "title": "fur alle Mandanten",
+                            "options": [
+                                {
+                                    "title": "fur alle Mandanten",
+                                    "selected": "boolean",
+                                    "supplychain": [
+                                        {
+                                            "supplychainsection": "Fertigung",
+                                            "selected": "boolean",
+                                            "locations": [
+                                                {
+                                                    "locationname": "string",
+                                                    "selected": "boolean"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "supplychainsection": "Lager",
+                                            "selected": "boolean",
+                                            "locations": [
+                                                {
+                                                    "locationid": "number",
+                                                    "locationname": "string",
+                                                    "selected": "boolean"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "supplychainsection": "Spedition",
+                                            "selected": "boolean",
+                                            "locations": [
+                                                {
+                                                    "locationid": "number",
+                                                    "locationname": "string",
+                                                    "selected": "boolean"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "beschreibung": {
+                            "title": "Dashboard",
+                            "information": "string"
+                        },
+                        "anzeigen": {
+                            "title": "Dashboard einsehen",
+                            "selected": "boolean"
+                        },
+                        "bearbeiten": {
+                            "title": "Dashboard anpassen",
+                            "selected": "boolean"
+                        },
+                        "hatBerechtigung": {
+                            "title": "fur Fertigung, alle Standorte, fur Lagerhalle, alle Standorte",
+                            "options": [
+                                {
+                                    "title": "fur alle Mandanten",
+                                    "selected": "boolean",
+                                    "supplychain": [
+                                        {
+                                            "supplychainsection": "Fertigung",
+                                            "selected": "boolean",
+                                            "locations": [
+                                                {
+                                                    "locationname": "string",
+                                                    "selected": "boolean"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "supplychainsection": "Lager",
+                                            "selected": "boolean",
+                                            "locations": [
+                                                {
+                                                    "locationid": "number",
+                                                    "locationname": "string",
+                                                    "selected": "boolean"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "supplychainsection": "Spedition",
+                                            "selected": "boolean",
+                                            "locations": [
+                                                {
+                                                    "locationid": "number",
+                                                    "locationname": "string",
+                                                    "selected": "boolean"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "beschreibung": {
+                            "title": "Fernzugriff",
+                            "information": "string"
+                        },
+                        "anzeigen": {
+                            "title": "Fernzugriff nutzen",
+                            "selected": "boolean"
+                        },
+                        "bearbeiten": {
+                            "title": "Benutzer kinfigurieren",
+                            "selected": "boolean"
+                        },
+                        "hatBerechtigung": {
+                            "title": "fur Fertigung, alle Standorte, fur Lagerhalle, alle Standorte",
+                            "options": [
+                                {
+                                    "title": "fur alle Mandanten",
+                                    "selected": "boolean",
+                                    "supplychain": [
+                                        {
+                                            "supplychainsection": "Fertigung",
+                                            "selected": "boolean",
+                                            "locations": [
+                                                {
+                                                    "locationname": "string",
+                                                    "selected": "boolean"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "supplychainsection": "Lager",
+                                            "selected": "boolean",
+                                            "locations": [
+                                                {
+                                                    "locationid": "number",
+                                                    "locationname": "string",
+                                                    "selected": "boolean"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "supplychainsection": "Spedition",
+                                            "selected": "boolean",
+                                            "locations": [
+                                                {
+                                                    "locationid": "number",
+                                                    "locationname": "string",
+                                                    "selected": "boolean"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "beschreibung": {
+                            "title": "Remote Visualisiertung",
+                            "information": "string"
+                        },
+                        "anzeigen": {
+                            "title": "Remote Visualisiertung nutzen",
+                            "selected": "boolean"
+                        },
+                        "bearbeiten": {
+                            "title": "Benutzer konfigurieren",
+                            "selected": "boolean"
+                        },
+                        "hatBerechtigung": "false"
+                    },
+                    {
+                        "beschreibung": {
+                            "title": "Alarmierung",
+                            "information": "string"
+                        },
+                        "anzeigen": {
+                            "title": "Alarmierung einsehen",
+                            "selected": "boolean"
+                        },
+                        "bearbeiten": {
+                            "title": "Alarmierung erfassen und anpassen",
+                            "selected": "boolean"
+                        },
+                        "hatBerechtigung": "false"
+                    },
+                    {
+                        "beschreibung": {
+                            "title": "Alarmmeldung",
+                            "information": "string"
+                        },
+                        "anzeigen": {
+                            "title": "Alarmmeldung einsehen",
+                            "selected": "boolean"
+                        },
+                        "bearbeiten": {
+                            "title": "Alarmmeldung quittieren und dokumentieren",
+                            "selected": "boolean"
+                        },
+                        "hatBerechtigung": "false"
+                    },
+                    {
+                        "beschreibung": {
+                            "title": "Alarmmeldungsempfanger",
+                            "information": "string"
+                        },
+                        "anzeigen": {
+                            "title": "Alarmmeldungsempfanger einsehen",
+                            "selected": "boolean"
+                        },
+                        "bearbeiten": {
+                            "title": "Alarmmeldungsempfanger erfassen und anpassen",
+                            "selected": "boolean"
+                        },
+                        "hatBerechtigung": "false"
+                    },
+                    {
+                        "beschreibung": {
+                            "title": "Alarmgrenzwert",
+                            "information": "string"
+                        },
+                        "anzeigen": {
+                            "title": "Grenzwerte fur Alarme einsehen",
+                            "selected": "boolean"
+                        },
+                        "bearbeiten": {
+                            "title": "Grenzwerte fur Alarme erfassen und anpassen",
+                            "selected": "boolean"
+                        },
+                        "hatBerechtigung": "false"
+                    },
+                    {
+                        "beschreibung": {
+                            "title": "Wiki Anlagedokumentation",
+                            "information": "string"
+                        },
+                        "anzeigen": {
+                            "title": "Wiki Anlagedokumentation einsehen",
+                            "selected": "boolean"
+                        },
+                        "bearbeiten": {
+                            "title": "Wiki Anlagedokumentation erfassen und anpassen",
+                            "selected": "boolean"
+                        },
+                        "hatBerechtigung": "false"
+                    },
+                    {
+                        "beschreibung": {
+                            "title": "Preise",
+                            "information": "string"
+                        },
+                        "anzeigen": {
+                            "title": "Preise bei Funktionsaktivierung einsehen",
+                            "selected": "boolean"
+                        },
+                        "bearbeiten": "false",
+                        "hatBerechtigung": "false"
+                    },
+                    {
+                        "beschreibung": {
+                            "title": "Daten Export",
+                            "information": "string"
+                        },
+                        "anzeigen": {
+                            "title": "Daten Export nutzen",
+                            "selected": "boolean"
+                        },
+                        "bearbeiten": "false",
+                        "hatBerechtigung": "false"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "administrator": {
+            "userInformation": {
+                "profile": {
+                    "userType": [
+                        "Administrator",
+                        "other user types..."
+                    ],
+                    "email": "string",
+                    "telephone": "number",
+                    "firstName": "string",
+                    "lastName": "string",
+                    "firm": "string"
+                },
+                "information": {
+                    "userIs": [
+                        "active",
+                        "inactive"
+                    ],
+                    "alarmMessageReceptionIs": [
+                        "active",
+                        "inactive"
+                    ],
+                    "multi-factor-authenticationIs": [
+                        "active",
+                        "inactive"
+                    ]
+                }
+            },
+            "assignedGroups": {
+                "assignedGroups": [],
+                "groupSelection": []
+            },
+            "assignedRole": {
+                "assignedRoles": [],
+                "groupRoles": []
+            },
+            "assignedPermissions": {
+                "systemPermissions": [
+                    {
+                        "title": "Gobale administration (Mutation)",
+                        "selected": "boolean",
+                        "information": "string"
+                    },
+                    {
+                        "title": "Globale administration (Support)",
+                        "selected": "boolean",
+                        "information": "string"
+                    },
+                    {
+                        "title": "Globale administration (Abrechnung)",
+                        "selected": "boolean",
+                        "information": "string"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "dashboardUser": {
+            "userInformation": {
+                "profile": {
+                    "userType": [
+                        "Dashboard User",
+                        "other user types..."
+                    ],
+                    "email": "string",
+                    "telephone": "number",
+                    "firstName": "string",
+                    "lastName": "string",
+                    "firm": "string"
+                },
+                "information": {
+                    "userIs": [
+                        "active",
+                        "inactive"
+                    ],
+                    "initialPassword": "{randomly generated password}",
+                    "lastActive": "date"
+                }
+            },
+            "assignedGroups": {
+                "assignedGroups": [],
+                "groupSelection": []
+            },
+            "assignedRole": {
+                "assignedRoles": [],
+                "groupRoles": []
+            },
+            "assignedPermissions": {
+                "featurePermissions": [
+                    {
+                        "beschreibung": {
+                            "title": "Dashboard",
+                            "information": "string"
+                        },
+                        "anzeigen": {
+                            "title": "Dashboard einsehen",
+                            "selected": "boolean"
+                        },
+                        "bearbeiten": "false",
+                        "hatBerechtigung": {
+                            "title": "fur Fertigung, alle Standorte",
+                            "options": [
+                                {
+                                    "title": "fur alle Mandanten",
+                                    "selected": "boolean",
+                                    "supplychain": [
+                                        {
+                                            "supplychainsection": "Fertigung",
+                                            "selected": "boolean",
+                                            "locations": [
+                                                {
+                                                    "locationname": "string",
+                                                    "selected": "boolean"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "supplychainsection": "Lager",
+                                            "selected": "boolean",
+                                            "locations": [
+                                                {
+                                                    "locationid": "number",
+                                                    "locationname": "string",
+                                                    "selected": "boolean"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "supplychainsection": "Spedition",
+                                            "selected": "boolean",
+                                            "locations": [
+                                                {
+                                                    "locationid": "number",
+                                                    "locationname": "string",
+                                                    "selected": "boolean"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "apiUser": {
+            "userInformation": {
+                "profile": {
+                    "userType": [
+                        "API USer",
+                        "other user types..."
+                    ],
+                    "email": "string",
+                    "telephone": "number",
+                    "firstName": "string",
+                    "lastName": "string",
+                    "firm": "string"
+                },
+                "information": {
+                    "userIs": [
+                        "active",
+                        "inactive"
+                    ],
+                    "lastActive": "date",
+                    "initialPassword": "{randomly generated password}"
+                }
+            },
+            "assignedGroups": {
+                "assignedGroups": [],
+                "groupSelection": []
+            },
+            "assignedRole": {
+                "assignedRoles": [],
+                "groupRoles": []
+            },
+            "assignedPermissions": ""
+        }
+    }
+]
