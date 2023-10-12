@@ -1,0 +1,265 @@
+[
+{
+    "Alarm Message Receiver": {
+        "User Information": {
+            "Profile": {
+                "User Type": [ //this selection controls the whole data structure
+                    "Alarm Message Reciever",
+                    "other user types..."
+                ],
+                "E-Mail": "string",
+                "Telephone": "number",
+                "First Name": "string",
+                "Last Name": "string",
+                "Firm": "string"
+            },
+            "Information": {
+                "Alarm Message Reception Is": [
+                    "active",
+                    "inactive"
+                ]
+            }
+        },
+        "Assigned Groups": {
+            "Assigned Groups": [], //selected groups added here
+            "Group Selection": [] //possible groups to select
+        }
+    }
+},
+{
+    "Portal User": {
+        "User Information": {
+            "Profile": {
+                "User Type": [ //this selection controls the whole data structure
+                    "Portal User",
+                    "other user types..."
+                ],
+                "E-Mail": "string",
+                "Telephone": "number",
+                "First Name": "string",
+                "Last Name": "string",
+                "Firm": "string"
+            },
+            "Information": {
+                "User Is": [
+                    "active",
+                    "inactive"
+                ],
+                "Alarm Message Reception Is": [
+                    "active",
+                    "inactive"
+                ],
+                "Start Site": [
+                    "Dashboard",
+                    "Alarmsettings",
+                    "..."
+                ],
+                "Last Active": "date",
+                "Multi-Factor-Authentication Is": [ 
+                    "active",
+                    "inactive"
+                ],
+                "Initial Password": "{randomly generated password}" 
+            }
+        },
+        "Assigned Groups": {
+            "Assigned Groups": [], //selected groups added here
+            "Group Selection": [] //possible groups to select
+        },
+        "Assigned Role": {
+            "Assigned Roles": [], //selected groups added here
+            "Group Roles": [] //possible groups to select
+        },
+        "Assigned Permissions": {
+            "System Permissions for Tenants":{
+                "Manage Role-Based Permissions": {
+                    "slected": "boolean",
+                    "information": "string"   
+                },
+                "Manage Dashboards": {
+                    "slected": "boolean",
+                    "information": "string"  
+                },
+                "Manage Locations": {
+                    "slected": "boolean",
+                    "information": "string" 
+                },
+                "Manage End Devices": {
+                    "slected": "boolean",
+                    "information": "string",
+                    "For Production, Warehouse": {
+                        "All Tenants": {
+                            "selected": "boolean",
+                            "Production": {
+                                "selected": "boolean"
+                            },
+                            "Warehouse": {
+                                "selected": "boolean"
+                            }, 
+                            "Shipping Company": {
+                                "selected": "boolean"
+                            }
+                        }
+                    }   
+                }
+            },
+            "Feature Permissions": [
+                {
+                    "Beschreibung": {"title": "Portalbenutzer", "information": "string"},
+                    "Anzeigen": {"title": "Portalbenutzer einsehen", "selected": "boolean"},
+                    "Bearbeiten": {"title": "Portalbenutzer erfassen un anpassen", "selected": "boolean"},
+                    "hat Berechtigung": {"title": "fur alle Mandanten", "options": [
+                        {
+                            "Alle Mandanten": {
+                                "selected": "boolean",
+                                "supply chain": [
+                                    {
+                                        "supplySection": "Fertigung", 
+                                        "selected": "boolean",
+                                        "locations": [
+                                            {
+                                                "locationName": "string",
+                                                "selected": "boolean"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "supplySection": "Lager", 
+                                        "selected": "boolean",
+                                        "locations": [
+                                            {   
+                                                "locationId": "number",
+                                                "locationName": "string",
+                                                "selected": "boolean"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "supplySection": "Spedition", 
+                                        "selected": "boolean",
+                                        "locations": [
+                                            {
+                                                "locationId": "number",
+                                                "locationName": "string",
+                                                "selected": "boolean"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]}
+                }
+            ]
+        }
+    }
+},
+{
+    "Administrator": {
+        "User Information": {
+            "Profile": {
+                "User Type": [ //this selection controls the whole data structure
+                    "Administrator",
+                    "other user types..."
+                ],
+                "E-Mail": "string",
+                "Telephone": "number",
+                "First Name": "string",
+                "Last Name": "string",
+                "Firm": "string"
+            },
+            "Information": {
+                "User is": [
+                    "active",
+                    "inactive"
+                ],
+                "Alarm message reception is": [
+                    "active",
+                    "inactive"
+                ],
+                "Multi-Factor-Authentication is": [ 
+                    "active",
+                    "inactive"
+                ]
+            }
+        },
+        "Assigned Groups": {
+            "Assigned Groups": [], //selected groups added here
+            "Group Selection": [] //possible groups to select
+        },
+        "Assigned Role": {
+            "Assigned Roles": [], //selected groups added here
+            "Group Roles": [] //possible groups to select
+        },
+        "Assigned Permissions": ""
+    }
+},
+{
+    "Dashboard User": {
+        "User Information": {
+            "Profile": {
+                "User Type": [ //this selection controls the whole data structure
+                    "Dashboard User",
+                    "other user types..."
+                ],
+                "E-Mail": "string",
+                "Telephone": "number",
+                "First Name": "string",
+                "Last Name": "string",
+                "Firm": "string"
+            },
+            "Information": {
+                "User Is": [
+                    "active",
+                    "inactive"
+                ],
+                "Initial Password": "{randomly generated password}",
+                "Last Active": "date"
+            }
+        },
+        "Assigned Groups": {
+            "Assigned Groups": [], //selected groups added here
+            "Group Selection": [] //possible groups to select
+        },
+        "Assigned Role": {
+            "Assigned Roles": [], //selected groups added here
+            "Group Roles": [] //possible groups to select
+        },
+        "Assigned Permissions": ""
+    }
+},
+{
+    "API User": {
+        "User Information": {
+            "Profile": {
+                "User Type": [ //this selection controls the whole data structure
+                    "API USer",
+                    "other user types..."
+                ],
+                "E-Mail": "string",
+                "Telephone": "number",
+                "First Name": "string",
+                "Last Name": "string",
+                "Firm": "string"
+            },
+            "Information": {
+                "User is": [
+                    "active",
+                    "inactive"
+                ],
+                "Last Active": "date",
+                "Initial Password": "{randomly generated password}" //❗different from initial drawing
+            }
+        },
+        "Assigned Groups": {
+            "Assigned Groups": [], //selected groups added here
+            "Group Selection": [] //possible groups to select
+        },
+        "Assigned Role": {
+            "Assigned Roles": [], //selected groups added here
+            "Group Roles": [] //possible groups to select
+        },
+        "Assigned Permissions": ""
+    }
+}
+]
